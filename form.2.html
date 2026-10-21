@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return formvalidate()">
+        Name : <input type ="text" id="xyz"><br>
+        Email : <input type ="email" id="abc"><br>
+        <input style="text-align: center;" type="submit" >
+        
+
+    </form>
+    <script>
+        function formvalidate(){
+            var name = document.getElementById("xyz").value;
+            var email = document.getElementById("abc").value;
+            if(name == ""){
+                alert("Name must be filled out");
+                return false;
+            }
+            if(email == ""){
+                alert("Email must be filled out");
+                return false;
+            }
+        }
+        
+    </script>
+</body>
+</html>
